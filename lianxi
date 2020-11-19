@@ -1,0 +1,17 @@
+目录结构
+
+project
+    --caozuo
+        --apps  项目目录
+            --user  模块目录
+                --__init__.py
+                --models.py 基本目录，主要数据库建表
+                --view.py   路由
+            --__init__.py   创建APP核心对象
+        --exts
+            --__init.py 创建映射关系
+        --static    静态文件
+        --templates 模板文件
+        --app.py    启动文件
+        --readme.txt    文本文件
+        --setting.py    配置文件
