@@ -97,6 +97,20 @@ manager.add_command('db', MigrateCommand)
     python app.py db upgrade ----->> 在数据库创建表
 
 
+6.添加数据：以注册为例
+#模板，视图与模型的结合
+
+#1.找到模型类并创建对象
+user = User()
+#2.给对象的属性赋值
+user.username = username
+user.password = password
+user.phone = phone
+#添加
+#3.将user对象添加到session中（类似缓存）
+db.session.add(user)
+#4.提交数据
+db.session.commit()
 
 
 
